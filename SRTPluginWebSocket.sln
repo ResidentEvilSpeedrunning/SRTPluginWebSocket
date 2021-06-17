@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRTPluginWebSocket", "SRTPluginWebSocket\SRTPluginWebSocket.csproj", "{A7A67B6E-C64A-43DE-9D03-AC3F6F5251FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRTPluginBase", "..\SRTHost\SRTPluginBase\SRTPluginBase.csproj", "{59E7239F-3F13-429A-A09B-863253D98EF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7A67B6E-C64A-43DE-9D03-AC3F6F5251FD}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A67B6E-C64A-43DE-9D03-AC3F6F5251FD}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{A7A67B6E-C64A-43DE-9D03-AC3F6F5251FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A67B6E-C64A-43DE-9D03-AC3F6F5251FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E7239F-3F13-429A-A09B-863253D98EF0}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{59E7239F-3F13-429A-A09B-863253D98EF0}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{59E7239F-3F13-429A-A09B-863253D98EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E7239F-3F13-429A-A09B-863253D98EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEF3FCC3-1025-4040-810D-3AABE8952EE3}
+	EndGlobalSection
+EndGlobal

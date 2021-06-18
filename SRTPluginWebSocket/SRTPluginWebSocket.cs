@@ -1,32 +1,36 @@
 ﻿using SRTPluginBase;
-using System.Linq;
-using System.Reflection;
-using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
+using System;
 
 namespace SRTPluginUIJSON
 {
-    public class SRTPluginWebSocket
+    public class SRTPluginWebSocket : IPluginUI
     {
         public IPluginInfo Info => new PluginInfo();
         public string RequiredProvider => string.Empty;
-        public static object gameMemory = null;
-        public static MethodInfo serializer = null;
         public WebsocketClient ws;
-        public void Startup()
+
+        public int Startup(IPluginHostDelegates hostDelegates)
         {
-            ws = new WebsocketClient("https://relay.aricodes.net/ws", "443");
+            ws = new WebsocketClient("ws://relay.aricodes.net/ws", "443");
+            return 0;
         }
 
-        public void Shutdown()
+        public int Shutdown()
         {
-            ws.Dispose();
+            try
+            {
+                ws?.Dispose();
+                ws = null;
+            }
+            catch { return 1; }
+            
+            return 0;
         }
 
-        public void ReceiveData(object gameMemory)
+        public int ReceiveData(object gameMemory)
         {
             ws.SendData(gameMemory);
+            return 0;
         }
     }
 }

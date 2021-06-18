@@ -8,16 +8,18 @@ namespace SRTPluginUIJSON
 {
     public class WebsocketClient : IDisposable
     {
-        ClientWebSocket client = new ClientWebSocket();
+        private ClientWebSocket client;
         public WebsocketClient(string url, string port)
         {
+            client = new ClientWebSocket();
             client.ConnectAsync(new Uri(string.Format("{0}:{1}", url, port)), CancellationToken.None);
+            //var user = "ident:VideoGameRoulette";
+            //client.SendAsync(Encoding.Unicode.GetBytes(user), WebSocketMessageType.Text, false, CancellationToken.None);
         }
 
         public void SendData(object gameMemory)
         {
             var json = JsonSerializer.Serialize(gameMemory);
-
             client.SendAsync(Encoding.Unicode.GetBytes(json), WebSocketMessageType.Text, false, CancellationToken.None);
         }
 

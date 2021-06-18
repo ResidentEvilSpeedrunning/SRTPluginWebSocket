@@ -1,21 +1,29 @@
 ﻿using SRTPluginBase;
 using System;
 
-namespace SRTPluginUIJSON
+namespace SRTPluginWebSocket
 {
-    public class SRTPluginWebSocket : IPluginUI
+    public class SRTPluginWebSocket : PluginBase, IPluginUI
     {
-        public IPluginInfo Info => new PluginInfo();
+        public override IPluginInfo Info => new PluginInfo();
         public string RequiredProvider => string.Empty;
         public WebsocketClient ws;
+        public PluginConfiguration config;
 
-        public int Startup(IPluginHostDelegates hostDelegates)
+        public override int Startup(IPluginHostDelegates hostDelegates)
         {
-            ws = new WebsocketClient("ws://relay.aricodes.net/ws", "443");
+            config = LoadConfiguration<PluginConfiguration>();
+            if (config.Username == "") 
+            { 
+                SaveConfiguration(config);
+                Console.WriteLine("Please Close SRT and Enter username in /plugins/SRTPluginWebSocket/SRTPluginWebSocket.cfg and Restart");
+                return 1;
+            }
+            ws = new WebsocketClient("wss://relay.aricodes.net/ws", config);
             return 0;
         }
 
-        public int Shutdown()
+        public override int Shutdown()
         {
             try
             {
@@ -29,8 +37,13 @@ namespace SRTPluginUIJSON
 
         public int ReceiveData(object gameMemory)
         {
-            ws.SendData(gameMemory);
-            return 0;
+            if (config.Username != "")
+            {
+                ws.SendData(gameMemory);
+                return 0;
+            }
+            return 1;  
         }
+
     }
 }

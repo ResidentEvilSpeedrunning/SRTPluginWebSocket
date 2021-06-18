@@ -1,7 +1,7 @@
 ﻿using SRTPluginBase;
 using System;
 
-namespace SRTPluginUIJSON
+namespace SRTPluginWebSocket
 {
     internal class PluginInfo : IPluginInfo
     {

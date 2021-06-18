@@ -3,24 +3,52 @@ using System.Net.WebSockets;
 using System.Threading;
 using System.Text.Json;
 using System.Text;
+using System.Threading.Tasks;
+using SRTPluginBase;
+using System.Reflection;
+using System.IO;
 
-namespace SRTPluginUIJSON
+namespace SRTPluginWebSocket
 {
     public class WebsocketClient : IDisposable
     {
         private ClientWebSocket client;
-        public WebsocketClient(string url, string port)
+        private string Url;
+        private bool IsConnected;
+        private bool IsIdentified;
+        private string previousMessage;
+        public PluginConfiguration Config;
+        public WebsocketClient(string url, PluginConfiguration config)
         {
             client = new ClientWebSocket();
-            client.ConnectAsync(new Uri(string.Format("{0}:{1}", url, port)), CancellationToken.None);
-            //var user = "ident:VideoGameRoulette";
-            //client.SendAsync(Encoding.Unicode.GetBytes(user), WebSocketMessageType.Text, false, CancellationToken.None);
+            Url = url;
+            Config = config;
         }
 
-        public void SendData(object gameMemory)
+        public async Task Connect()
         {
+            await client.ConnectAsync(new Uri(Url), CancellationToken.None);
+            IsConnected = true;
+            await SetIdentity();
+        }
+
+        public async Task SetIdentity()
+        {
+            if (!IsConnected) { await Connect(); }
+            var username = Config.Username;
+            var user = string.Format("ident:{0}", username);
+            await client.SendAsync(Encoding.UTF8.GetBytes(user), WebSocketMessageType.Text, true, CancellationToken.None);
+            IsIdentified = true;
+        }
+
+        public async Task SendData(object gameMemory)
+        {
+            if (!IsConnected) { await Connect(); }
+            if (!IsIdentified) { await SetIdentity(); }
             var json = JsonSerializer.Serialize(gameMemory);
-            client.SendAsync(Encoding.Unicode.GetBytes(json), WebSocketMessageType.Text, false, CancellationToken.None);
+            if (previousMessage == json) { return; }
+            await client.SendAsync(Encoding.UTF8.GetBytes(json), WebSocketMessageType.Text, true, CancellationToken.None);
+            previousMessage = json;
         }
 
         #region IDisposable Support

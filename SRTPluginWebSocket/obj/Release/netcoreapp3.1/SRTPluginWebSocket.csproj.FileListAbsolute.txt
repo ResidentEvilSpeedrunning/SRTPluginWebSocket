@@ -1,0 +1,11 @@
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\netcoreapp3.1\SRTPluginWebSocket.deps.json
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\netcoreapp3.1\SRTPluginWebSocket.dll
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\netcoreapp3.1\SRTPluginWebSocket.pdb
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.csproj.AssemblyReference.cache
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.AssemblyInfoInputs.cache
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.AssemblyInfo.cs
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.csproj.CoreCompileInputs.cache
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.csproj.CopyComplete
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.dll
+C:\Users\video\source\repos\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\netcoreapp3.1\SRTPluginWebSocket.pdb

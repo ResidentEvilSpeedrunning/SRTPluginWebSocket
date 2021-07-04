@@ -1,33 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj": {}
+    "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
-      "version": "2.4.3",
+    "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj": {
+      "version": "1.0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
-        "projectName": "SRTPluginBase",
-        "projectPath": "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+        "projectUniqueName": "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
+        "projectName": "SRTPluginWebSocket",
+        "projectPath": "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
         "packagesPath": "C:\\Users\\video\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\obj\\",
+        "outputPath": "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\video\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+                "projectPath": "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+                "excludeAssets": "runtime"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -37,8 +42,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "System.Text.Json": {
               "target": "Package",
@@ -64,35 +69,30 @@
         }
       }
     },
-    "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+      "version": "3.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
-        "projectName": "SRTPluginWebSocket",
-        "projectPath": "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
+        "projectUniqueName": "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+        "projectName": "SRTPluginBase",
+        "projectPath": "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
         "packagesPath": "C:\\Users\\video\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\obj\\",
+        "outputPath": "C:\\Users\\video\\source\\repos\\Squirrelies\\SRTHost\\SRTPluginBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\video\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
-                "projectPath": "C:\\Users\\video\\source\\repos\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
-                "excludeAssets": "runtime"
-              }
-            }
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -102,8 +102,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "System.Text.Json": {
               "target": "Package",
@@ -121,7 +121,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
+            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },

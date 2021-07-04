@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kyXCuQNDxBYMVInDLtfhO/zulHAHKXL27E9aDwNX7liuRsAuQ1X+EnOy4Pcx7gWgxv04jLYHH68EHUO7gakMMg==",
+  "dgSpecHash": "i+16p23iQw6s7nXwryxZEiBxGmoufJKf78Wgq0BlyBtPkbNUk5SVl+cmRA1KbDj9hvp2KfOB5eoufKRlg/CiRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\video\\source\\repos\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
+  "projectFilePath": "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\video\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],

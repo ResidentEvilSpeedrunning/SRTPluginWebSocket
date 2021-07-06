@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "System.Text.Json/4.7.2": {
+      "System.Text.Json/5.0.2": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
@@ -15,7 +15,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SRTPluginBase.dll": {}
@@ -27,10 +27,10 @@
     }
   },
   "libraries": {
-    "System.Text.Json/4.7.2": {
-      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+    "System.Text.Json/5.0.2": {
+      "sha512": "I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
       "type": "package",
-      "path": "system.text.json/4.7.2",
+      "path": "system.text.json/5.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -43,7 +43,7 @@
         "lib/netcoreapp3.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.5.0.2.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -58,7 +58,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "SRTPluginBase >= 3.0.0",
-      "System.Text.Json >= 4.7.2"
+      "System.Text.Json >= 5.0.2"
     ]
   },
   "packageFolders": {
@@ -107,7 +107,7 @@
         "dependencies": {
           "System.Text.Json": {
             "target": "Package",
-            "version": "[4.7.2, )"
+            "version": "[5.0.2, )"
           }
         },
         "imports": [

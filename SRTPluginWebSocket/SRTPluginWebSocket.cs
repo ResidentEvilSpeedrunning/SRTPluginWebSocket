@@ -13,7 +13,7 @@ namespace SRTPluginWebSocket
         public override int Startup(IPluginHostDelegates hostDelegates)
         {
             config = LoadConfiguration<PluginConfiguration>();
-            if (config.Username == "") 
+            if (config.Token == "") 
             { 
                 SaveConfiguration(config);
                 Console.WriteLine("Please Close SRT and Enter username in /plugins/SRTPluginWebSocket/SRTPluginWebSocket.cfg and Restart");
@@ -37,7 +37,7 @@ namespace SRTPluginWebSocket
 
         public int ReceiveData(object gameMemory)
         {
-            if (config.Username != "")
+            if (config.Token != "")
             {
                 ws.SendData(gameMemory);
                 return 0;

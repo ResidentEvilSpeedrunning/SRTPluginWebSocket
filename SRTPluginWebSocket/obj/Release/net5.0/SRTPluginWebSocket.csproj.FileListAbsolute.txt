@@ -2,11 +2,13 @@ C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPlugi
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\net5.0\SRTPluginWebSocket.dll
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\net5.0\ref\SRTPluginWebSocket.dll
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\net5.0\SRTPluginWebSocket.pdb
+C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\bin\Release\net5.0\System.Text.Json.dll
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.csproj.AssemblyReference.cache
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.AssemblyInfoInputs.cache
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.AssemblyInfo.cs
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.csproj.CoreCompileInputs.cache
+C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.csproj.CopyComplete
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.dll
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\ref\SRTPluginWebSocket.dll
 C:\Users\video\source\repos\ResidentEvilSpeedrunning\SRTPluginWebSocket\SRTPluginWebSocket\obj\Release\net5.0\SRTPluginWebSocket.pdb

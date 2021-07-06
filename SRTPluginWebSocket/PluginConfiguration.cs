@@ -1,12 +1,14 @@
-﻿namespace SRTPluginWebSocket
+﻿using System;
+
+namespace SRTPluginWebSocket
 {
     public class PluginConfiguration
     {
-        public string Username { get; set; }
+        public string Token { get; set; }
 
         public PluginConfiguration()
         {
-            Username = "";
+            Token = "";
         }
     }
 }

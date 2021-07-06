@@ -47,7 +47,7 @@
           "dependencies": {
             "System.Text.Json": {
               "target": "Package",
-              "version": "[4.7.2, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -107,7 +107,7 @@
           "dependencies": {
             "System.Text.Json": {
               "target": "Package",
-              "version": "[4.7.2, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

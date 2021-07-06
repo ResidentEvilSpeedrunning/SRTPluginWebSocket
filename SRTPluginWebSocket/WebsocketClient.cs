@@ -35,7 +35,7 @@ namespace SRTPluginWebSocket
         public async Task SetIdentity()
         {
             if (!IsConnected) { await Connect(); }
-            var username = Config.Username;
+            var username = Config.Token;
             var user = string.Format("ident:{0}", username);
             await client.SendAsync(Encoding.UTF8.GetBytes(user), WebSocketMessageType.Text, true, CancellationToken.None);
             IsIdentified = true;

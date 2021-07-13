@@ -7,12 +7,13 @@ namespace SRTPluginWebSocket
         public string Token { get; set; }
         public string Key { get; set; }
 
-        public bool LowBandwithMode = true;
+        public bool LowBandwithMode { get; set; }
 
         public PluginConfiguration()
         {
             Token = "";
             Key = "";
+            LowBandwithMode = true;
         }
     }
 }

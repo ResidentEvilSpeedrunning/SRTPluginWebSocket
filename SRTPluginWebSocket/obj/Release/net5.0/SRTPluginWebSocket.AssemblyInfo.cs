@@ -16,8 +16,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2021 Christopher Couture")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A plugin that runs a light-weight websocket server to output the values provided " +
     "by the loaded Provider Plugin in JSON format.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.1")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Websocket Server UI Plugin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRTPluginWebSocket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("3.0.0.0")]

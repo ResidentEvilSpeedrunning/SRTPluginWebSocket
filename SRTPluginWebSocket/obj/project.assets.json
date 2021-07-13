@@ -65,7 +65,7 @@
     "C:\\Users\\video\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "restore": {
       "projectUniqueName": "C:\\Users\\video\\source\\repos\\ResidentEvilSpeedrunning\\SRTPluginWebSocket\\SRTPluginWebSocket\\SRTPluginWebSocket.csproj",
       "projectName": "SRTPluginWebSocket",

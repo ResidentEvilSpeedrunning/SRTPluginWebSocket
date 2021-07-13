@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Net.WebSockets;
-using System.Threading;
-using System.Text.Json;
 using System.Text;
+using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
-using SRTPluginBase;
-using System.Reflection;
-using System.IO;
 
 namespace SRTPluginWebSocket
 {
@@ -16,13 +13,23 @@ namespace SRTPluginWebSocket
         private string Url;
         private bool IsConnected;
         private bool IsIdentified;
+        private bool HasVerified;
+        private bool IsVerified;
+        private bool HasSecretKey;
+
         private string previousMessage;
         public PluginConfiguration Config;
+        private long TimeStamp = 0;
+
         public WebsocketClient(string url, PluginConfiguration config)
         {
             client = new ClientWebSocket();
             Url = url;
             Config = config;
+            if (Config.Key != "")
+            {
+                HasSecretKey = true;
+            }
         }
 
         public async Task Connect()
@@ -41,14 +48,27 @@ namespace SRTPluginWebSocket
             IsIdentified = true;
         }
 
+        public async Task SetSecret()
+        {
+            if (!IsConnected) { await Connect(); }
+            var secretKey = Config.Key;
+            var key = string.Format("key:{0}", secretKey);
+            await client.SendAsync(Encoding.UTF8.GetBytes(key), WebSocketMessageType.Text, true, CancellationToken.None);
+            HasVerified = true;
+        }
+
         public async Task SendData(object gameMemory)
         {
             if (!IsConnected) { await Connect(); }
             if (!IsIdentified) { await SetIdentity(); }
+            if (!HasVerified && HasSecretKey) { await SetSecret(); }
             var json = JsonSerializer.Serialize(gameMemory);
-            if (previousMessage == json) { return; }
+            var ticks = Config.LowBandwithMode ? 20L : 10L;
+            var IsLimited = DateTime.UtcNow.Ticks < TimeStamp + ticks && !HasVerified;
+            if (previousMessage == json || IsLimited) { return; }
             await client.SendAsync(Encoding.UTF8.GetBytes(json), WebSocketMessageType.Text, true, CancellationToken.None);
             previousMessage = json;
+            TimeStamp = DateTime.UtcNow.Ticks;
         }
 
         #region IDisposable Support
